@@ -41,12 +41,12 @@ mod tests {
 
     #[test]
     fn test_multiple_digits() {
-        assert_eq!(sum_of_digits(228), 12); 
+        assert_eq!(sum_of_digits(228), 12);
     }
 
     #[test]
     fn test_large_number() {
-        assert_eq!(sum_of_digits(12345), 15); 
+        assert_eq!(sum_of_digits(12345), 15);
     }
 
     #[test]
