@@ -5,7 +5,9 @@ fn main() {
 
     let mut input = String::new();
 
-    io::stdin().read_line(&mut input).expect("Problem with reading"); 
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Problem with reading");
 
     let number: i32 = match input.trim().parse() {
         Ok(num) => num,
@@ -24,6 +26,6 @@ fn sum_of_digits(n: i32) -> i32 {
     if n < 10 {
         return n;
     }
-    
+
     (n % 10) + sum_of_digits(n / 10)
 }
