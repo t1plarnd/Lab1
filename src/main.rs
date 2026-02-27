@@ -1,9 +1,11 @@
-use std::io;
+use std::io::{self, Write};
 
 fn main() {
-    println!("Enter number:");
+    print!("Enter number: "); 
+    io::stdout().flush().unwrap(); 
 
     let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Problem with reading");
 
     io::stdin()
         .read_line(&mut input)
